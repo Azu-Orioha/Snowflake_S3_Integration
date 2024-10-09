@@ -6,3 +6,7 @@ How to integrate the snowflake cloud data warehouse with AWS cloud S3 bucket to 
 
 # S3 Bucket name 
 demo-09-sep
+
+
+# ARN Number
+arn:aws:iam::767398062641:role/role-09-sep

@@ -13,5 +13,15 @@
 			"Resource": "arn:aws:s3:::<demo-09-sep>/*"
 		},
 		{
- 			"Effect": "Allow",	]
+ 			"Effect": "Allow",
+			"Action": [
+			   "s3:ListBucket",
+			   "s3:GetBucketLocation",
+			],
+			"Resource": "arn:aws:s3:::<demo-09-sep>",
+			"Condition": {
+			    "StringLike":{
+				"s3:prefix": [
+				    "*"
+		
 }

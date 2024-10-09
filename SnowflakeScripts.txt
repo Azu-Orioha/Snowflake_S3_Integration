@@ -1,0 +1,21 @@
+
+CREATE DATABASE DEMO;
+CREATE SCHEMA DEMO_09102024;
+
+CREATE OR REPLACE STORAGE integration aws_s3_integration
+type = external_stage
+storage_provider='s3'
+enabled=true
+storage_aws_role_arn='arn:aws:iam::767398062641:role/role-09-sep'
+storage_allowed_locations = ('s3://demo-09-sep/');
+
+show integrations;
+desc integration aws_s3_integration;
+
+GRANT usage on integration aws_s3_integration to role accountadmin
+
+create or replace file format demo_format
+type = 'CSV'
+field_delimiter ='|'
+skip_header=1;
+

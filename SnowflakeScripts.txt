@@ -1,4 +1,3 @@
-
 CREATE DATABASE DEMO;
 CREATE SCHEMA DEMO_09102024;
 
@@ -24,3 +23,5 @@ storage_integration= aws_s3_integration
 file_format =  demo_format
 url = 's3://demo-09-sep/';
 
+list @aws_s3_integration
+remove @aws_s3_integration/orders.csv;

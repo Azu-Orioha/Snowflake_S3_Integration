@@ -23,5 +23,17 @@ storage_integration= aws_s3_integration
 file_format =  demo_format
 url = 's3://demo-09-sep/';
 
+
 list @aws_s3_integration
 remove @aws_s3_integration/orders.csv;
+
+create or replace temporary table demo_customer_info(
+id interger,
+firstname string,
+);
+
+copy into demo_customer_info 
+from @aws_s3_integration/orders.csv
+file_format =(demo_format);
+
+

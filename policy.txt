@@ -10,7 +10,8 @@
 			   "s3:DeleteObject",
 			   "s3:"DeleteObjectVersion,
 			  ],
-			"Resource": []
-		}
-	]
+			"Resource": "arn:aws:s3:::<demo-09-sep>/*"
+		},
+		{
+ 			"Effect": "Allow",	]
 }

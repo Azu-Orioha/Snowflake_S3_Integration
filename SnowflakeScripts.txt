@@ -28,8 +28,22 @@ list @aws_s3_integration
 remove @aws_s3_integration/orders.csv;
 
 create or replace temporary table demo_customer_info(
-id interger,
-firstname string,
+Order Id,
+Order Date,	
+Ship Mode,	
+Segment	,
+Country	,
+City	,
+State	,
+Postal Code	,
+Region	,
+Category,	
+Sub Category,	
+Product Id	,
+cost price	,
+List Price	,
+Quantity	,
+Discount Percent,
 );
 
 copy into demo_customer_info 

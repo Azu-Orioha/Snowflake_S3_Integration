@@ -12,3 +12,7 @@ demo-09-sep
 arn:aws:iam::767398062641:role/role-09-sep
 
 
+my notes
+https://www.youtube.com/watch?v=NXaRxwax9qA
+
+
